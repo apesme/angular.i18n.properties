@@ -1,5 +1,5 @@
 # angular.i18n.properties
-lightweight angular module for providing internationalization to javascript from ‘.properties’ files
+lightweight angular module for providing internationalization to angular from ‘.properties’ files
 
 it's a simple rewrite of https://github.com/jquery-i18n-properties/jquery-i18n-properties in angular style without use of JQuery
 
