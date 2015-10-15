@@ -474,4 +474,14 @@ String.prototype.split = function (separator, limit) {
 
 return that;
     }]);
+
+    angular.module('angularI18nProperties').filter('translate', ['i18nProperties', function(i18nProperties) {
+        return function(input) {
+            if (angular.isDefined(input) && input !== null && (input.length > 0)) {
+                return i18nProperties.i18n.prop(input);
+            } else {
+                return input;
+            }
+        };
+    }]);
 })( angular );
