@@ -19,16 +19,6 @@ it's a simple rewrite of https://github.com/jquery-i18n-properties/jquery-i18n-p
 <script>
 	var app = angular.module("myApp", ['angularI18nProperties']);
 	
-	app.filter('translate', ['i18nProperties', function(i18nProperties) {
-    return function(input) {
-      if (angular.isDefined(input) && input !== null && (input.length > 0)) {
-        return i18nProperties.i18n.prop(input);
-      } else {
-        return input;
-      }
-    };
-  }]);
-	
 	app.controller('myCtrl', ['i18nProperties', function(i18nProperties) {
 	  var mctrl = this;
 	
